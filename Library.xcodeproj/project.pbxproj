@@ -19,6 +19,10 @@
 		0A4708FB28881286004E8A37 /* LibraryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4708FA28881286004E8A37 /* LibraryCollectionViewController.swift */; };
 		0A4708FD288812A0004E8A37 /* LibraryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4708FC288812A0004E8A37 /* LibraryCollectionViewCell.swift */; };
 		0A47090028881CD3004E8A37 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0A4708FF28881CD3004E8A37 /* Kingfisher */; };
+		0A47090328884AA6004E8A37 /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A47090228884AA6004E8A37 /* Test.storyboard */; };
+		0A47090528884ACC004E8A37 /* LabelTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47090428884ACC004E8A37 /* LabelTestViewController.swift */; };
+		0A47090728885001004E8A37 /* ButtonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47090628885001004E8A37 /* ButtonTestViewController.swift */; };
+		0A47090928885423004E8A37 /* ImageTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47090828885423004E8A37 /* ImageTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		0A4708F828881275004E8A37 /* Library.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Library.storyboard; sourceTree = "<group>"; };
 		0A4708FA28881286004E8A37 /* LibraryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCollectionViewController.swift; sourceTree = "<group>"; };
 		0A4708FC288812A0004E8A37 /* LibraryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCollectionViewCell.swift; sourceTree = "<group>"; };
+		0A47090228884AA6004E8A37 /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		0A47090428884ACC004E8A37 /* LabelTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTestViewController.swift; sourceTree = "<group>"; };
+		0A47090628885001004E8A37 /* ButtonTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestViewController.swift; sourceTree = "<group>"; };
+		0A47090828885423004E8A37 /* ImageTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,7 @@
 				0A4708FA28881286004E8A37 /* LibraryCollectionViewController.swift */,
 				0A4708FC288812A0004E8A37 /* LibraryCollectionViewCell.swift */,
 				0A4708F528881249004E8A37 /* Data */,
+				0A47090128884A9C004E8A37 /* Test */,
 				0A4708E7288811BB004E8A37 /* Assets.xcassets */,
 				0A4708E9288811BB004E8A37 /* LaunchScreen.storyboard */,
 				0A4708EC288811BB004E8A37 /* Info.plist */,
@@ -90,6 +99,17 @@
 				0A4708F628881252004E8A37 /* Movie.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		0A47090128884A9C004E8A37 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				0A47090228884AA6004E8A37 /* Test.storyboard */,
+				0A47090428884ACC004E8A37 /* LabelTestViewController.swift */,
+				0A47090628885001004E8A37 /* ButtonTestViewController.swift */,
+				0A47090828885423004E8A37 /* ImageTestViewController.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +180,7 @@
 				0A4708E8288811BB004E8A37 /* Assets.xcassets in Resources */,
 				0A4708F928881275004E8A37 /* Library.storyboard in Resources */,
 				0A4708E6288811BA004E8A37 /* Main.storyboard in Resources */,
+				0A47090328884AA6004E8A37 /* Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,9 +195,12 @@
 				0A4708FD288812A0004E8A37 /* LibraryCollectionViewCell.swift in Sources */,
 				0A4708DF288811BA004E8A37 /* AppDelegate.swift in Sources */,
 				0A4708F3288811D1004E8A37 /* MovieInfo.swift in Sources */,
+				0A47090928885423004E8A37 /* ImageTestViewController.swift in Sources */,
 				0A4708E1288811BA004E8A37 /* SceneDelegate.swift in Sources */,
 				0A4708FB28881286004E8A37 /* LibraryCollectionViewController.swift in Sources */,
+				0A47090728885001004E8A37 /* ButtonTestViewController.swift in Sources */,
 				0A4708F728881252004E8A37 /* Movie.swift in Sources */,
+				0A47090528884ACC004E8A37 /* LabelTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

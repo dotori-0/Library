@@ -62,7 +62,9 @@ class LibraryCollectionViewCell: UICollectionViewCell {
         containerView.backgroundColor = getBackgroundColorArray().randomElement()  // force-unwrapping 필요 없는 이유..? 함수에서 이미 확인해줘서?
         containerView.layer.cornerRadius = 20
 //        containerView.clipsToBounds = false
-//        containerView.layer.masksToBounds = true
+        containerView.clipsToBounds = true  // 이미지 자름
+//        containerView.layer.masksToBounds = false
+//        containerView.layer.masksToBounds = true  // 이미지 자름
         
 //        bookTitleLabel.font = .boldSystemFont(ofSize: 24)
         bookTitleLabel.font = .systemFont(ofSize: 24, weight: .bold)  // .boldSystemFont 보다 두꺼움
@@ -71,7 +73,7 @@ class LibraryCollectionViewCell: UICollectionViewCell {
         
         let url = URL(string: data.posterImageURL)
         posterImageView.kf.setImage(with: url)
-        posterImageView.backgroundColor = .systemIndigo
+//        posterImageView.backgroundColor = .systemIndigo
         
         rateLabel.font = .systemFont(ofSize: 12)
         rateLabel.textColor = .white
