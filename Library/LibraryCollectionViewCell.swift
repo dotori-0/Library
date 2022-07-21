@@ -82,6 +82,7 @@ class LibraryCollectionViewCell: UICollectionViewCell {
         let url = URL(string: data.posterImageURL)
         posterImageView.kf.setImage(with: url)
 //        posterImageView.backgroundColor = .systemIndigo
+        posterImageView.layer.cornerRadius = 5
         
         rateLabel.font = .systemFont(ofSize: 12)
         rateLabel.textColor = .white
