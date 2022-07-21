@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3F4E4A28891E54003688FB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4E4928891E54003688FB /* SearchViewController.swift */; };
+		0A3F4E4C28892E25003688FB /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F4E4B28892E24003688FB /* Search.storyboard */; };
+		0A3F4E4E28892ED6003688FB /* LibraryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4E4D28892ED6003688FB /* LibraryDetailViewController.swift */; };
+		0A3F4E5128893172003688FB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4E5028893172003688FB /* WebViewController.swift */; };
+		0A3F4E532889317D003688FB /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F4E522889317D003688FB /* Web.storyboard */; };
 		0A4708DF288811BA004E8A37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4708DE288811BA004E8A37 /* AppDelegate.swift */; };
 		0A4708E1288811BA004E8A37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4708E0288811BA004E8A37 /* SceneDelegate.swift */; };
 		0A4708E3288811BA004E8A37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4708E2288811BA004E8A37 /* ViewController.swift */; };
@@ -26,6 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A3F4E4928891E54003688FB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0A3F4E4B28892E24003688FB /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		0A3F4E4D28892ED6003688FB /* LibraryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDetailViewController.swift; sourceTree = "<group>"; };
+		0A3F4E5028893172003688FB /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		0A3F4E522889317D003688FB /* Web.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
 		0A4708DB288811BA004E8A37 /* Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4708DE288811BA004E8A37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A4708E0288811BA004E8A37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +67,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3F4E4828891E3F003688FB /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F4E4B28892E24003688FB /* Search.storyboard */,
+				0A3F4E4928891E54003688FB /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		0A3F4E4F2889315A003688FB /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F4E522889317D003688FB /* Web.storyboard */,
+				0A3F4E5028893172003688FB /* WebViewController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
 		0A4708D2288811BA004E8A37 = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +109,11 @@
 				0A4708E2288811BA004E8A37 /* ViewController.swift */,
 				0A4708E4288811BA004E8A37 /* Main.storyboard */,
 				0A4708F828881275004E8A37 /* Library.storyboard */,
+				0A3F4E4D28892ED6003688FB /* LibraryDetailViewController.swift */,
 				0A4708FA28881286004E8A37 /* LibraryCollectionViewController.swift */,
 				0A4708FC288812A0004E8A37 /* LibraryCollectionViewCell.swift */,
+				0A3F4E4828891E3F003688FB /* Search */,
+				0A3F4E4F2889315A003688FB /* Web */,
 				0A4708F528881249004E8A37 /* Data */,
 				0A47090128884A9C004E8A37 /* Test */,
 				0A4708E7288811BB004E8A37 /* Assets.xcassets */,
@@ -180,6 +211,8 @@
 				0A4708E8288811BB004E8A37 /* Assets.xcassets in Resources */,
 				0A4708F928881275004E8A37 /* Library.storyboard in Resources */,
 				0A4708E6288811BA004E8A37 /* Main.storyboard in Resources */,
+				0A3F4E532889317D003688FB /* Web.storyboard in Resources */,
+				0A3F4E4C28892E25003688FB /* Search.storyboard in Resources */,
 				0A47090328884AA6004E8A37 /* Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,14 +225,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4708E3288811BA004E8A37 /* ViewController.swift in Sources */,
+				0A3F4E4A28891E54003688FB /* SearchViewController.swift in Sources */,
 				0A4708FD288812A0004E8A37 /* LibraryCollectionViewCell.swift in Sources */,
 				0A4708DF288811BA004E8A37 /* AppDelegate.swift in Sources */,
 				0A4708F3288811D1004E8A37 /* MovieInfo.swift in Sources */,
+				0A3F4E4E28892ED6003688FB /* LibraryDetailViewController.swift in Sources */,
 				0A47090928885423004E8A37 /* ImageTestViewController.swift in Sources */,
 				0A4708E1288811BA004E8A37 /* SceneDelegate.swift in Sources */,
 				0A4708FB28881286004E8A37 /* LibraryCollectionViewController.swift in Sources */,
 				0A47090728885001004E8A37 /* ButtonTestViewController.swift in Sources */,
 				0A4708F728881252004E8A37 /* Movie.swift in Sources */,
+				0A3F4E5128893172003688FB /* WebViewController.swift in Sources */,
 				0A47090528884ACC004E8A37 /* LabelTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
