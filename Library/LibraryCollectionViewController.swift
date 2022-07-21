@@ -84,13 +84,22 @@ class LibraryCollectionViewController: UICollectionViewController {
         
         // 2.5 vc를 navigation controller embed
         let nav = UINavigationController(rootViewController: vc)
-        
+
         // 2.5 present 시 화면 전환 방식 설정 (옵션)
         nav.modalPresentationStyle = .fullScreen
-        
+
         // 3.
         self.present(nav, animated: true)  // self 생략 가능한지? O
         
+        
+        /*
+        // Navigation Embed 없이 present
+        // 2.5 present 시 화면 전환 방식 설정 (옵션)
+        vc.modalPresentationStyle = .fullScreen
+        
+        // 3.
+        self.present(vc, animated: true)  // self 생략 가능한지? O
+        */
         
     }
     

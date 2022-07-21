@@ -12,6 +12,8 @@
 		0A3F4E4E28892ED6003688FB /* LibraryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4E4D28892ED6003688FB /* LibraryDetailViewController.swift */; };
 		0A3F4E5128893172003688FB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4E5028893172003688FB /* WebViewController.swift */; };
 		0A3F4E532889317D003688FB /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F4E522889317D003688FB /* Web.storyboard */; };
+		0A3F4E55288954D0003688FB /* UIViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4E54288954D0003688FB /* UIViewTestViewController.swift */; };
+		0A3F4E5728895CA0003688FB /* ViewInViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F4E5628895CA0003688FB /* ViewInViewTestViewController.swift */; };
 		0A4708DF288811BA004E8A37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4708DE288811BA004E8A37 /* AppDelegate.swift */; };
 		0A4708E1288811BA004E8A37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4708E0288811BA004E8A37 /* SceneDelegate.swift */; };
 		0A4708E3288811BA004E8A37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4708E2288811BA004E8A37 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 		0A3F4E4D28892ED6003688FB /* LibraryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryDetailViewController.swift; sourceTree = "<group>"; };
 		0A3F4E5028893172003688FB /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		0A3F4E522889317D003688FB /* Web.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
+		0A3F4E54288954D0003688FB /* UIViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTestViewController.swift; sourceTree = "<group>"; };
+		0A3F4E5628895CA0003688FB /* ViewInViewTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInViewTestViewController.swift; sourceTree = "<group>"; };
 		0A4708DB288811BA004E8A37 /* Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4708DE288811BA004E8A37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A4708E0288811BA004E8A37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +143,8 @@
 				0A47090428884ACC004E8A37 /* LabelTestViewController.swift */,
 				0A47090628885001004E8A37 /* ButtonTestViewController.swift */,
 				0A47090828885423004E8A37 /* ImageTestViewController.swift */,
+				0A3F4E54288954D0003688FB /* UIViewTestViewController.swift */,
+				0A3F4E5628895CA0003688FB /* ViewInViewTestViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -225,7 +231,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A4708E3288811BA004E8A37 /* ViewController.swift in Sources */,
+				0A3F4E55288954D0003688FB /* UIViewTestViewController.swift in Sources */,
 				0A3F4E4A28891E54003688FB /* SearchViewController.swift in Sources */,
+				0A3F4E5728895CA0003688FB /* ViewInViewTestViewController.swift in Sources */,
 				0A4708FD288812A0004E8A37 /* LibraryCollectionViewCell.swift in Sources */,
 				0A4708DF288811BA004E8A37 /* AppDelegate.swift in Sources */,
 				0A4708F3288811D1004E8A37 /* MovieInfo.swift in Sources */,
@@ -380,7 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = CustomGlobalTintColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -407,7 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = CustomGlobalTintColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

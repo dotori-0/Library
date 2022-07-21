@@ -24,13 +24,17 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LibraryCollectionViewCell" id="vUf-gY-2PL" customClass="LibraryCollectionViewCell" customModule="Library" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LibraryCollectionViewCell" id="vUf-gY-2PL" customClass="LibraryCollectionViewCell" customModule="Library" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Xfi-bI-LAs">
+                                <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Xfi-bI-LAs">
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rbT-Kw-CJa">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nlr-IG-PsA">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <subviews>
@@ -68,8 +72,12 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Nlr-IG-PsA" firstAttribute="leading" secondItem="Xfi-bI-LAs" secondAttribute="leading" id="0qa-9a-kF8"/>
+                                        <constraint firstItem="rbT-Kw-CJa" firstAttribute="centerY" secondItem="Xfi-bI-LAs" secondAttribute="centerY" id="WlC-6n-AjK"/>
                                         <constraint firstAttribute="trailing" secondItem="Nlr-IG-PsA" secondAttribute="trailing" id="ZS8-GV-Der"/>
                                         <constraint firstAttribute="bottom" secondItem="Nlr-IG-PsA" secondAttribute="bottom" id="fSl-Nn-edz"/>
+                                        <constraint firstItem="rbT-Kw-CJa" firstAttribute="width" secondItem="Xfi-bI-LAs" secondAttribute="width" id="jPW-oc-LWZ"/>
+                                        <constraint firstItem="rbT-Kw-CJa" firstAttribute="height" secondItem="Xfi-bI-LAs" secondAttribute="height" id="nZu-yV-mbr"/>
+                                        <constraint firstItem="rbT-Kw-CJa" firstAttribute="centerX" secondItem="Xfi-bI-LAs" secondAttribute="centerX" id="q5H-zz-Hhf"/>
                                         <constraint firstItem="Nlr-IG-PsA" firstAttribute="top" secondItem="Xfi-bI-LAs" secondAttribute="top" id="qhG-1w-0j7"/>
                                     </constraints>
                                 </collectionViewCellContentView>
@@ -78,6 +86,7 @@
                                     <outlet property="containerView" destination="Nlr-IG-PsA" id="ShF-ab-CLJ"/>
                                     <outlet property="posterImageView" destination="l7R-tm-BCS" id="79V-6h-Azn"/>
                                     <outlet property="rateLabel" destination="OaZ-Qw-gfx" id="Yz2-Bb-E0N"/>
+                                    <outlet property="shadowView" destination="rbT-Kw-CJa" id="1SN-FV-0on"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

@@ -15,6 +15,7 @@ class LibraryCollectionViewCell: UICollectionViewCell {
 //    Getter for 'contentView' with Objective-C selector 'contentView' conflicts with getter for 'contentView' from superclass 'UICollectionViewCell' with the same Objective-C selector
 //    Property 'contentView' with type 'UIView?' cannot override a property with type 'UIView'
     
+    @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var bookTitleLabel: UILabel!
     @IBOutlet weak var posterImageView: UIImageView!
@@ -63,8 +64,15 @@ class LibraryCollectionViewCell: UICollectionViewCell {
         containerView.layer.cornerRadius = 20
 //        containerView.clipsToBounds = false
         containerView.clipsToBounds = true  // 이미지 자름
+
 //        containerView.layer.masksToBounds = false
 //        containerView.layer.masksToBounds = true  // 이미지 자름
+        
+        shadowView.layer.cornerRadius = 20
+        shadowView.layer.shadowColor = UIColor.black.cgColor
+        shadowView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        shadowView.layer.shadowRadius = 6
+        shadowView.layer.shadowOpacity = 0.1
         
 //        bookTitleLabel.font = .boldSystemFont(ofSize: 24)
         bookTitleLabel.font = .systemFont(ofSize: 24, weight: .bold)  // .boldSystemFont 보다 두꺼움

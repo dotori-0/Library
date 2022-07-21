@@ -31,7 +31,10 @@ class SearchViewController: UIViewController {
 //    }
 
     
-
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
