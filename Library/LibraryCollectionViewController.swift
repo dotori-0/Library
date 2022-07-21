@@ -14,6 +14,8 @@ class LibraryCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
 
         let layout = UICollectionViewFlowLayout()
         let spacing: CGFloat = 12
@@ -52,6 +54,10 @@ class LibraryCollectionViewController: UICollectionViewController {
         
 //        let sb = UIStoryboard(name: <#T##String#>, bundle: <#T##Bundle?#>)
         let vc = self.storyboard?.instantiateViewController(withIdentifier: LibraryDetailViewController.identifier) as! LibraryDetailViewController
+  
+        // vc의 viewDidLoad() 전 함수를 실행하여 오류 발생
+//        let data = movieInfo.movie[indexPath.item]
+//        vc.configureViews(data: data)
         
         self.navigationController?.pushViewController(vc, animated: true)   // 네비게이션 컨트롤러가 있으면 푸시
         
